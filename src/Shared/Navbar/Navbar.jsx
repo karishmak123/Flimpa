@@ -1,5 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
+import RequestQuoteForm from '@components/RequestQuoteForm/RequestQuoteForm.jsx';
+
+
+
+
+
 import {
   FaBars,
   FaFacebookF,
@@ -18,13 +24,17 @@ import { GrAlarm } from "react-icons/gr";
 
 const Navbar = () => {
   //sticky
+  const [isPopupOpen, setIsPopupOpen] = useState(false); // State to control popup visibility
 
-  useEffect(() => {
-    window.addEventListener("scroll", isSticky);
-    return () => {
-      window.removeEventListener("scroll", isSticky);
-    };
-  });
+  // Open the popup
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  // Close the popup
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   /* Method that will fix header after a specific scrollable */
 
@@ -455,14 +465,24 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </ul>
-              <div className="hidden lg:flex items-center">
-                <button>
-                  <IoSearch className="text-2xl ml-2 mr-10 text-HeadingColor-0" />
-                </button>
-                <Link to={"/contact"} className="header-btn">
-                  Get A Quote
-                </Link>
-              </div>
+              <div>
+      {/* Navbar content */}
+      <div className="hidden lg:flex items-center">
+        <button>
+          <IoSearch className="text-2xl ml-2 mr-10 text-HeadingColor-0" />
+        </button>
+
+        {/* Button to open popup */}
+        <button className="header-btn" onClick={openPopup}>
+          Get A Quote
+        </button>
+      </div>
+
+      {/* Conditional rendering of the popup form */}
+      {isPopupOpen && (
+        <RequestQuoteForm onClosePopup={closePopup} />
+      )}
+    </div>
             </div>
           </div>
         </div>

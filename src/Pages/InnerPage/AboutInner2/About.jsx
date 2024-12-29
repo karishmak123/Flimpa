@@ -62,7 +62,7 @@ const About = () => {
                   Our Mission
                 </button>
               </Link>
-              <Link to={"/vision_inner"}>
+              <Link to={"/mission_inner"}>
                 <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito">
                   Our Vision
                 </button>

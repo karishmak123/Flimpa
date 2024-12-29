@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
-import serviceIcon from "/images/service-1.png";
+// import serviceIcon from "/images/service-1.png";
 import serviceIcon2 from "/images/service-2.png";
-import serviceIcon3 from "/images/service-3.png";
+import serviceIcon from "/images/service-3.png";
+import serviceIcon3 from "/images/mobile-icon-development.png";
 import serviceIcon4 from "/images/service-4.png";
 import serviceIcon5 from "/images/service-5.png";
 import serviceIcon6 from "/images/service-6.png";
@@ -11,7 +12,7 @@ import { HiMiniArrowLongRight } from "react-icons/hi2";
 const ServiceData = [
   {
     id: 1,
-    serviceIcon: serviceIcon,
+    serviceIcon: serviceIcon2,
     serviceNumber: "01",
     serviceTitle: "Website Design",
     serviceDesc:
@@ -22,7 +23,7 @@ const ServiceData = [
   },
   {
     id: 2,
-    serviceIcon: serviceIcon2,
+    serviceIcon: serviceIcon,
     serviceNumber: "02",
     serviceTitle: "Website Development",
     serviceDesc:
@@ -41,6 +42,7 @@ const ServiceData = [
     serviceUrl: "/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
+    serviceIconStyle: { width: "60px !important" }, // Add inline width style here
   },
   {
     id: 4,

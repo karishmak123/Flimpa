@@ -1,296 +1,182 @@
 import { Link } from "react-router-dom";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import wedgetIcon from "/images/widget-icon.png";
-import serviceDetailsIcon from "/images/services-details-icon-1.png";
-import serviceDetailsIcon2 from "/images/services-details-icon-2.png";
-import serviceDetailsThumb from "/images/service-details.jpg";
-import projectDetialsBoxImg from "/images/services-details-benifis-thumb-1.png";
-import projectDetialsBoxImg2 from "/images/services-details-benifis-thumb-2.png";
 import {
-  FaArrowRight,
   FaArrowRightLong,
   FaRegFolderOpen,
+  FaHtml5,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaCloud,
+  FaArrowRight,
 } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { HiDownload } from "react-icons/hi";
-import { BsFileEarmarkPdf } from "react-icons/bs";
-import { IoMdCheckmark } from "react-icons/io";
 import { AiOutlineSolution } from "react-icons/ai";
-
-const ServiceDetails6 = () => {
+import { HiDownload } from "react-icons/hi";
+import { RiCheckFill } from "react-icons/ri";
+import { FaCogs,FaShieldAlt  } from "react-icons/fa";
+const ServiceDetails = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"UI/UX Design"}
+        breadCrumbTitle={"Web Application Development"}
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"Service Details"}
       />
-      <section className="py-[120px] bg-white">
-        <div className="Container">
-          <div className="grid grid-cols-3 gap-[50px]">
-            <div className="col-span-3 lg:col-span-2">
-              <img
-                src={serviceDetailsThumb}
-                draggable="false"
-                className="w-full"
-              />
-              <h2 className="font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 mt-8">
-                UI/UX Design Services
-              </h2>
-              <p className="font-Nunito text-TextColor2-0 mt-6">
-                Alternative innovation to ethical network environmental
-                whiteboard pursue compelling results premier methods
-                empowerment. Dramatically architect go forward opportunities
-                before user-centric partner Credibly implement exceptional
-              </p>
-              <p className="font-Nunito text-TextColor2-0 mt-7 mb-11">
-                Continually fashion orthogonal leadership skills whereas
-                wireless metrics. Uniquely syndicate exceptio opportunities with
-                interdependent users. Globally enhance fully tested
-                meta-services rather than pan solutions. Proactively integrate
-                client-integrate go forward architectures and turnkey
-                meta-services. Interactively harness integrated ROI whereas
-                frictionless products.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
-                <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7">
-                  <div className="w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center">
-                    <img src={serviceDetailsIcon} draggable="false" />
-                  </div>
-                  <div className="flex-1">
-                    <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                      Custom Software
-                    </h6>
-                    <p className="font-Nunito text-TextColor2-0 mt-3">
-                      Ethical network environmental architect go forward opportu
-                      credibly implement
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7">
-                  <div className="w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center">
-                    <img src={serviceDetailsIcon2} draggable="false" />
-                  </div>
-                  <div className="flex-1">
-                    <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                      Mobile Application
-                    </h6>
-                    <p className="font-Nunito text-TextColor2-0 mt-3">
-                      Ethical network environmental architect go forward opportu
-                      credibly implement
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-PrimaryColor-0 px-[42px] rounded-md py-7 flex flex-col sm:flex-row sm:items-center gap-8 mt-[62px]">
-                <div className=" pr-8 sm:border-r-2">
-                  <AiOutlineSolution size={"50"} className="text-white" />
-                </div>
-                <div className="flex-1">
-                  <p className="font-Nunito italic text-lg sm:text-[22px] leading-8 text-white">
-                    Competently architect intermandated deliverables client
-                    <br className="hidden 2xl:block" />
-                    niches continually underwhelm
-                  </p>
-                </div>
-              </div>
-              <h2 className="font-Rajdhani font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[54px]">
-                What the Benifits?
-              </h2>
-              <p className="font-Nunito text-TextColor2-0 mt-6">
-                Alternative innovation to ethical network environmental
-                whiteboard pursue compelling results for premier methods
-                empowerment. Dramatically architect go forward opportunities
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-9">
-                <div className="text-center group">
-                  <div className="overflow-hidden rounded">
-                    <img
-                      src={projectDetialsBoxImg}
-                      draggable="false"
-                      className="transition-all duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="bg-white shadow-cases rounded inline-block pt-7 pl-4 sm:pl-8 pb-7 w-4/5 -mt-5 relative z-10">
-                    <h4 className="font-Rajdhani text-HeadingColor-0 font-semibold text-[22px] lg:text-xl xl:text-[22px] text-left mb-3">
-                      Analysis And Planning.
-                    </h4>
-                    <ul>
-                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito mb-2 lg:text-sm xl:text-base">
-                        <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
-                        New Modern Equipments
-                      </li>
-                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
-                        <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
-                        Expert’s Volunteers
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="text-center group">
-                  <div className="overflow-hidden rounded">
-                    <img
-                      src={projectDetialsBoxImg2}
-                      draggable="false"
-                      className="transition-all duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="bg-white shadow-cases rounded inline-block pt-7 pl-4 sm:pl-8 pb-7 w-4/5 -mt-5 relative z-10">
-                    <h4 className="font-Rajdhani text-HeadingColor-0 font-semibold text-[22px] lg:text-xl xl:text-[22px] text-left mb-3">
-                      Design & Development.
-                    </h4>
-                    <ul>
-                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito mb-2 lg:text-sm xl:text-base">
-                        <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
-                        New Modern Equipments
-                      </li>
-                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
-                        <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
-                        Expert’s Volunteers
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+
+      {/* Overview Section */}
+      <section className="pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative mt-5">
+      {/* <img
+        src={aboutShape}
+        draggable={false}
+        className="absolute top-0 right-0"
+      /> */}
+  <div className="Container">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
+    <div className="relative z-10">
+      <img src="/images/web-application-development.jpg" draggable="false" />
+    </div>
+    <div className="relative">
+      <h1 className="font-Rajdhani font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
+        Why Choose Our Digital Marketing Services?
+      </h1>
+      <p className="font-Nunito text-TextColor2-0 pb-8">
+        In today's fast-paced digital world, effective marketing is the key to unlocking the full potential of your business. Our digital marketing services are tailored to drive results, enhance brand visibility, and foster long-lasting relationships with your audience. Whether you’re looking to build your brand or reach new customers, we leverage cutting-edge technology and proven strategies to help you succeed.
+      </p>
+      <div className="flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center">
+        <ul>
+          <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
+            <span className="text-PrimaryColor-0">
+              <RiCheckFill size={"24"} />
+            </span>
+            Data-Driven Campaigns for Maximum Impact
+          </li>
+          <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
+            <span className="text-PrimaryColor-0">
+              <RiCheckFill size={"24"} />
+            </span>
+            Targeted Strategies to Grow Your Audience
+          </li>
+          <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
+            <span className="text-PrimaryColor-0">
+              <RiCheckFill size={"24"} />
+            </span>
+            Real-Time Analytics to Track Your Success
+          </li>
+          <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
+            <span className="text-PrimaryColor-0">
+              <RiCheckFill size={"24"} />
+            </span>
+            Dedicated 24/7 Support to Address Your Needs
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+     {/* Features Section */}
+<section className="py-16" style={{background: "rgb(2 21 51)", marginBottom:"50px"}}>
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl font-bold text-white">Key Features of Our Web Application Development Services</h2>
+    <p className="mt-4 text-lg text-white">
+      Our web application development services are designed to deliver high-quality, scalable, and secure solutions. Explore the key features we provide:
+    </p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+      {/* Feature 1 */}
+      <div className="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaDatabase className="text-blue-600 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold text-gray-900">Scalable Database Solutions</h3>
+        <p className="mt-2 text-gray-600">
+          Our database management systems are designed for scalability, ensuring your application can handle growing amounts of data and user requests with ease.
+        </p>
+      </div>
+      
+      {/* Feature 2 */}
+      <div className="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaReact className="text-blue-500 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold text-gray-900">Responsive Frontend Development</h3>
+        <p className="mt-2 text-gray-600">
+          We specialize in building dynamic and engaging user interfaces using React.js, Angular, and other modern frameworks, ensuring your web app is responsive across all devices.
+        </p>
+      </div>
+      
+      {/* Feature 3 */}
+      <div className="bg-yellow-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaNodeJs className="text-green-600 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold text-gray-900">Efficient Backend Architecture</h3>
+        <p className="mt-2 text-gray-600">
+          Using Node.js and other technologies, we build high-performance backend systems that provide quick data processing and seamless integrations.
+        </p>
+      </div>
+      
+      {/* Feature 4 */}
+      <div className="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaShieldAlt className="text-purple-600 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold text-gray-900">Advanced Security Measures</h3>
+        <p className="mt-2 text-gray-600">
+          We ensure the highest level of security by implementing encryption, secure authentication, and rigorous security protocols to protect your web app and user data.
+        </p>
+      </div>
+      
+      {/* Feature 5 */}
+      <div className="bg-orange-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaCloud className="text-yellow-600 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold text-gray-900">Cloud Integration</h3>
+        <p className="mt-2 text-gray-600">
+          Our cloud-based solutions guarantee scalability, high availability, and better performance, ensuring your application can handle fluctuations in user demand.
+        </p>
+      </div>
+      
+      {/* Feature 6 */}
+      <div className="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaCogs className="text-teal-600 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold text-gray-900">Seamless Integrations</h3>
+        <p className="mt-2 text-gray-600">
+          We offer smooth integration with third-party services, APIs, and payment gateways, making sure your web application works efficiently with other platforms.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      {/* Technologies We Use Section */}
+      {/* <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Technologies We Use for Web Application Development</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Our team employs cutting-edge tools and frameworks to build modern web applications. From frontend to backend, we ensure every component works seamlessly.
+          </p>
+          <div className="flex justify-center gap-8">
+         
+            <div className="bg-gradient-to-r from-red-400 via-red-600 to-red-800 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
+              <FaHtml5 className="text-white text-6xl" />
             </div>
-            <div className="col-span-3 lg:col-span-1">
-              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
-                <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
-                  Categories
-                </h4>
-                <ul className="mt-8">
-                  <li>
-                    <Link to={"/service_details"}>
-                      <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Web Development
-                        </span>
-                        <FaArrowRightLong className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/service_details2"}>
-                      <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Digital Marketing
-                        </span>
-                        <FaArrowRightLong className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/service_details3"}>
-                      <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          IT Solution
-                        </span>
-                        <FaArrowRightLong className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/service_details4"}>
-                      <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          App Development
-                        </span>
-                        <FaArrowRightLong className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/service_details5"}>
-                      <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Web Design
-                        </span>
-                        <FaArrowRightLong className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/service_details6"}>
-                      <button className="w-full font-Nunito text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-PrimaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <FaRegFolderOpen className="text-white transition-all duration-500 group-hover:text-white" />
-                          UI/UX Design
-                        </span>
-                        <FaArrowRightLong className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
-                <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
-                  Downloads
-                </h4>
-                <ul className="mt-8">
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Nunito bg-SecondaryColor-0 text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <BsFileEarmarkPdf
-                            size={"20"}
-                            className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white"
-                          />
-                          Service Report
-                        </span>
-                        <HiDownload size={"24"} className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Nunito bg-SecondaryColor-0 text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                          <BsFileEarmarkPdf
-                            size={"20"}
-                            className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white"
-                          />
-                          Service Lists
-                        </span>
-                        <HiDownload size={"24"} className="text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="rounded-lg px-9 overflow-hidden bg-[url('/images/sidber-contact.png')] bg-cover bg-no-repeat bg-center py-[50px]">
-                <img src={wedgetIcon} draggable="false" />
-                <h6 className="font-Nunito font-medium text-lg text-white mt-5 mb-2">
-                  Call Us Anytime
-                </h6>
-                <Link to={"/"}>
-                  <button className="font-Nunito font-semibold text-2xl text-white">
-                    +123 (4567) 890
-                  </button>
-                </Link>
-                <Link to={"/"}>
-                  <button className="font-Nunito text-white flex gap-2 items-center mt-4 mb-[52px]">
-                    <MdEmail className="text-xl text-PrimaryColor-0" />
-                    example@gmail.com
-                  </button>
-                </Link>
-                <Link to={"/"}>
-                  <button className="font-Nunito text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
-                    Contact Us
-                    <FaArrowRight />
-                  </button>
-                </Link>
-              </div>
+
+            <div className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
+              <FaReact className="text-white text-6xl" />
+            </div>
+
+            <div className="bg-gradient-to-r from-green-500 via-green-600 to-green-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
+              <FaNodeJs className="text-white text-6xl" />
+            </div>
+
+            <div className="bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
+              <FaDatabase className="text-white text-6xl" />
+            </div>
+
+            <div className="bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
+              <FaCloud className="text-white text-6xl" />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+    
     </>
   );
 };
 
-export default ServiceDetails6;
+export default ServiceDetails;

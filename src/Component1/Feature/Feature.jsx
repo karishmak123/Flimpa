@@ -12,35 +12,36 @@ const processData = [
     featureIcon: featureIcon,
     featureshape: featureshape,
     featureshape2: featureshape2,
-    featureTitle: "22+ Year Experience",
+    featureTitle: "Cutting-Edge Solutions",
     featureDesc:
-      "Monotonically synergize grants to business visualize strategic infomediaries",
+      "We leverage the latest technologies to craft innovative web and app solutions that elevate your business.",
     featureUrl: "/service",
-    featureBtn: "Read More",
+    featureBtn: "Explore More",
   },
   {
     id: 2,
     featureIcon: featureIcon2,
     featureshape: featureshape,
     featureshape2: featureshape2,
-    featureTitle: "Dedicated Members",
+    featureTitle: "Expert Team",
     featureDesc:
-      "Monotonically synergize grants to business visualize strategic infomediaries",
-    featureUrl: "/service",
-    featureBtn: "Read More",
+      "Our skilled developers and designers work passionately to deliver projects tailored to your vision.",
+    featureUrl: "/team",
+    featureBtn: "Meet the Team",
   },
   {
     id: 3,
     featureIcon: featureIcon3,
     featureshape: featureshape,
     featureshape2: featureshape2,
-    featureTitle: "Valuable Supports",
+    featureTitle: "Unmatched Support",
     featureDesc:
-      "Monotonically synergize grants to business visualize strategic infomediaries",
-    featureUrl: "/service",
-    featureBtn: "Read More",
+      "From concept to deployment, we provide ongoing support to ensure your success in the digital world.",
+    featureUrl: "/support",
+    featureBtn: "Contact Us",
   },
 ];
+
 
 const Feature = () => {
   return (

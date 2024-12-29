@@ -9,7 +9,7 @@ const processData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureTitle: "22+ Year Experience",
+    featureTitle: "22+ Year Exp",
     featureDesc: "Completely fashion reliable more products grow business",
   },
   {

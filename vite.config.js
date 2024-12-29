@@ -6,4 +6,10 @@ export default defineConfig({
   server: {
     port: 3000, // Specify the desired port
   },
+  resolve: {
+    alias: {
+      '@components': '/src/Component1',
+      '@shared': '/src/Shared',
+    },
+  },
 });

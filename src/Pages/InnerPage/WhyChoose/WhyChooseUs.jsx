@@ -1,42 +1,43 @@
 import { FaCircle } from "react-icons/fa6";
 import whyChooseImg from "/images/choose-us-thumb.png"
 import ServiceCard from "./ServiceCard";
-import serviceIcon from "/images/choose-us-icon-1.png";
-import serviceIcon2 from "/images/choose-us-icon-2.png";
-import serviceIcon3 from "/images/choose-us-icon-3.png";
-import serviceIcon4 from "/images/choose-us-icon-4.png";
+import serviceIcon from "/images/customer-review.png";
+import serviceIcon2 from "/images/like.png";
+import serviceIcon3 from "/images/website-optimization.png";
+import serviceIcon4 from "/images/premium-badge.png";
 
 
 const ServiceData = [
   {
     id: 1,
     serviceIcon: serviceIcon,
-    serviceTitle: "Client Satisfation",
+    serviceTitle: "Customer Satisfaction First",
     serviceDesc:
-      "Monotonectally synergize granular to front markets task state data security semper maecenas ferform.",
+      "We prioritize your needs by delivering customized solutions, ensuring exceptional satisfaction at every step of the journey.",
   },
   {
     id: 2,
     serviceIcon: serviceIcon2,
-    serviceTitle: "Result Oriented Approch",
+    serviceTitle: "Results-Driven Approach",
     serviceDesc:
-      "Monotonectally synergize granular to front markets task state data security semper maecenas ferform.",
+      "Our focus is on delivering measurable results with strategies designed to boost your business growth and success.",
   },
   {
     id: 3,
     serviceIcon: serviceIcon3,
-    serviceTitle: "Speed And Efficiency",
+    serviceTitle: "Speed & Precision",
     serviceDesc:
-      "Monotonectally synergize granular to front markets task state data security semper maecenas ferform.",
+      "We combine cutting-edge technology and efficient processes to provide fast and accurate solutions that meet your deadlines.",
   },
   {
     id: 4,
     serviceIcon: serviceIcon4,
-    serviceTitle: "Excellent Quality",
+    serviceTitle: "Commitment to Quality",
     serviceDesc:
-      "Monotonectally synergize granular to front markets task state data security semper maecenas ferform.",
+      "Our commitment to excellence ensures that every project is delivered with the highest quality standards, making your success our priority.",
   },
 ];
+
 
 const WhyChooseUs = () => {
   return (

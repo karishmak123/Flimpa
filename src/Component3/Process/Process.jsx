@@ -14,7 +14,7 @@ const processData = [
     boxNumber1: "1",
     boxShape: boxShape,
     processTitle: "Select A Project",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processDesc: "We collaborate with clients to understand their needs and select the right technologies for the project.",
   },
 
   {
@@ -23,24 +23,27 @@ const processData = [
     boxNumber1: "2",
     boxShape: boxShape2,
     processTitle: "Project Analysis",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processDesc: "We analyze project requirements and market trends to craft a tailored solution.",
   },
+
   {
     id: 3,
     processImg: processImg3,
     boxNumber1: "3",
     boxShape: boxShape,
     processTitle: "Start a Project",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processDesc: "We begin development with an agile approach, ensuring regular feedback and progress.",
   },
+
   {
     id: 4,
     processImg: processImg4,
     boxNumber1: "4",
-    processTitle: "Deliver to Succes",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processTitle: "Deliver to Success",
+    processDesc: "We deliver a fully tested product and provide ongoing support for long-term success.",
   },
 ];
+
 
 const Process = () => {
   return (
@@ -52,7 +55,7 @@ const Process = () => {
           </h5>
           <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
             Working Process For{" "}
-            <span className="text-PrimaryColor-0">Technology</span>
+            <span className="text-PrimaryColor-0">Projects</span>
           </h1>
         </div>
           <div className="mt-[94px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-16">

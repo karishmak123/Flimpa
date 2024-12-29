@@ -7,7 +7,7 @@ const ServiceCard = ({
   return (
     <div className="relative z-10 text-center">
       <div>
-        <img src={serviceIcon} draggable="false" className="m-auto" />
+        <img src={serviceIcon} draggable="false"  className="m-auto w-16 lg:w-20 xl:w-24 2xl:w-12"  />
       </div>
       <h5 className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 mt-6">
         {serviceTitle}

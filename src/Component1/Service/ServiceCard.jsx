@@ -10,13 +10,18 @@ const ServiceCard = ({
   serviceButton,
   serviceBtnIcon,
 }) => {
+  // Conditional class for 65px width
+  const iconStyle =
+    serviceNumber === "03" ? "w-[65px] h-auto" : "w-auto h-auto";
+
   return (
     <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
       <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-SecondaryColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
         <img
           src={serviceIcon}
           draggable="false"
-          className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
+          className={`transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] ${iconStyle}`}
+          alt={`${serviceTitle} icon`}
         />
       </div>
       <div className="absolute top-8 right-0">
