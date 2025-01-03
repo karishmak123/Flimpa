@@ -40,7 +40,7 @@ const ServiceDetails2 = () => {
         className="absolute top-0 right-0"
       /> */}
    <div className="Container">
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center" style={{marginTop:"8%"}}>
     <div className="relative z-10">
       <img src="/images/web-devlopment.jpg" draggable="false" />
     </div>
@@ -49,7 +49,7 @@ const ServiceDetails2 = () => {
         Why Choose Our Website Development Services?
       </h1>
       <p className="font-Nunito text-TextColor2-0 pb-8">
-        At TopTech, we craft custom websites that reflect your brand and engage users. Our responsive, SEO-friendly solutions deliver results, ensuring your site is fast, mobile-optimized, and easy to maintain.
+       We craft custom websites that reflect your brand and engage users. Our responsive, SEO-friendly solutions deliver results, ensuring your site is fast, mobile-optimized, and easy to maintain.
       </p>
       <div className="flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center">
         <ul>

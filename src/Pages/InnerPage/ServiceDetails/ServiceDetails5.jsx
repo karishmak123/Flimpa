@@ -27,7 +27,7 @@ const ServiceDetails = () => {
       {/* Overview Section */}
       <section className="pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative mt-5">
   <div className="Container">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center" style={{marginTop:"8%"}}>
       <div className="relative z-10">
         <img src="/images/digital-marketing.jpg" draggable="false" />
       </div>
@@ -36,7 +36,7 @@ const ServiceDetails = () => {
           Why Choose Our Digital Marketing?
         </h1>
         <p className="font-Nunito text-TextColor2-0 pb-8">
-          At [Your Company Name], we combine innovative strategies and cutting-edge technologies to elevate your online presence. Our digital marketing services are tailored to meet the unique needs of your business, whether you’re looking to increase your reach, engage more customers, or boost your revenue.
+        We combine innovative strategies and cutting-edge technologies to elevate your online presence. Our digital marketing services are tailored to meet the unique needs of your business, whether you’re looking to increase your reach, engage more customers, or boost your revenue.
         </p>
         <div className="flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center">
           <ul>

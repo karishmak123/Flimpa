@@ -88,9 +88,9 @@ const ServiceDetails = () => {
         className="absolute top-0 right-0"
       /> */}
         <div className="Container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center" style={{marginTop:"8%"}}>
             <div className="relative z-10">
-              <img src="/images/web-design-concepts-with-blurred-background.jpg" draggable="false" alt="Web Design Concepts" />
+              <img src="/images/web-design-image.jpg" draggable="false" alt="Web Design Concepts" />
             </div>
             <div className="relative">
               <h1 className="font-Rajdhani font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">

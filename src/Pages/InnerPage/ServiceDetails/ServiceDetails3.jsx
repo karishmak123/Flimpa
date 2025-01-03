@@ -44,7 +44,7 @@ const ServiceDetails = () => {
         className="absolute top-0 right-0"
       /> */}
    <div className="Container">
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center" style={{marginTop:"8%"}}>
     <div className="relative z-10">
       <img src="/images/ecommerce-development.jpg" alt="Ecommerce Development" draggable="false" />
     </div>

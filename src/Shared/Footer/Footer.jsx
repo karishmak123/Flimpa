@@ -7,7 +7,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { GoArrowRight } from "react-icons/go";
-// import { LuArrowRightCircle } from "react-icons/lu";
+import { FiArrowRightCircle } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
@@ -43,7 +43,7 @@ const Footer = () => {
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     About Us
                   </button>
                 </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Our Team
                   </button>
                 </Link>
@@ -59,15 +59,15 @@ const Footer = () => {
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
-                    Pricing Plan
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
+                   Our Project
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Latest Blog
                   </button>
                 </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Careers
                   </button>
                 </Link>
@@ -90,23 +90,23 @@ const Footer = () => {
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
-                    IT Solutions
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
+                    Website Design
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
-                    Cyber Security
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
+                   Website Developemnt
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Digital Marketing
                   </button>
                 </Link>
@@ -114,16 +114,16 @@ const Footer = () => {
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
-                    Brand Identity
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
+                   App Development
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
-                    {/* <LuArrowRightCircle className="text-base text-PrimaryColor-0" /> */}
-                    SEO Marketing
+                    <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
+                   Website Application
                   </button>
                 </Link>
               </li>
@@ -131,28 +131,18 @@ const Footer = () => {
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[30px]">
-              Newsletter
+            Get in Touch!
             </h4>
             <p className="font-Nunito text-white opacity-80 font-medium mb-[26px]">
-              Subscribe Our Latest Newsletter
+            Your Feedback Drives Us
             </p>
             <form action="#" method="post">
-              <label htmlFor="email" className="relative">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter Your E-Mail*"
-                  required
-                  className="w-full h-[56px] font-Nunito outline-none focus:outline-none border border-BorderColor-0 bg-transparent px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
-                />
-                <HiOutlineMail className="absolute top-1/2 -translate-y-1/2 right-6 text-white opacity-50 text-xl" />
-              </label>
+           
               <button
                 type="submit"
                 className="h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
               >
-                Subscribe
+                Contact
               </button>
             </form>
           </div>

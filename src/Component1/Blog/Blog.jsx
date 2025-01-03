@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { FaRegCalendarCheck } from "react-icons/fa6";
-import blogThumb from "/images/blog1.png";
-import blogThumb2 from "/images/blog2.png";
-import blogThumb3 from "/images/blog3.png";
+import blogThumb from "/images/color-wheel-primary-colors-brilliance-pantone.jpg";
+import blogThumb2 from "/images/representations-user-experience-interface-design.jpg";
+import blogThumb3 from "/images/modern-office-desk-composition-with-technological-device_23-2147916744.jpg";
 import BlogCard from "./BlogCard";
 import { GoArrowRight } from "react-icons/go";
 import { PiUserCircleFill } from "react-icons/pi";
@@ -12,11 +12,11 @@ const blogData = [
     id: 1,
     blogThumb: blogThumb,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
+    blogDate: "01 jan, 2025",
     blogTagIcon: <PiUserCircleFill />,
     blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Most Popular Chrome Extensionfor Business Promot",
+    blogUrl: "",
+    blogTitle: "How to Choose the Right Colors for Your Website",
     blogBtn: "Read More",
     blogBtnIcon: <GoArrowRight />,
   },
@@ -24,11 +24,11 @@ const blogData = [
     id: 2,
     blogThumb: blogThumb2,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
+    blogDate: "15 oct, 2024",
     blogTagIcon: <PiUserCircleFill />,
     blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "How to Secure your facebook Business Account",
+    blogUrl: "",
+    blogTitle: "How to Optimize Your Website for User Experience",
     blogBtn: "Read More",
     blogBtnIcon: <GoArrowRight />,
   },
@@ -39,8 +39,8 @@ const blogData = [
     blogDate: "24 Mar, 2024",
     blogTagIcon: <PiUserCircleFill />,
     blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Better Context Menus With Safe Triangles",
+    blogUrl: "",
+    blogTitle: "The Impact of Mobile Devices on Web Design",
     blogBtn: "Read More",
     blogBtnIcon: <GoArrowRight />,
   },

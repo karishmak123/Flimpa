@@ -16,7 +16,7 @@ const technologies = [
 
 const TechnologySection = () => {
   return (
-    <div className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
+    <div className="py-20 pt-[86px] pb-28 bg-[url('/images/technology-bg.jpg')] bg-no-repeat bg-cover bg-center text-white ">
       <h2 className="text-4xl font-extrabold text-center mb-12">
         Technologies We Use
       </h2>

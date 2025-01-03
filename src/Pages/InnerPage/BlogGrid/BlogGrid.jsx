@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogGridImg from "/images/blog-1.png";
-import blogGridImg2 from "/images/blog-2.png";
-import blogGridImg3 from "/images/blog-3.png";
+import blogGridImg from "/images/color-wheel-primary-colors-brilliance-pantone.jpg";
+import blogGridImg2 from "/images/representations-user-experience-interface-design.jpg";
+import blogGridImg3 from "/images/modern-office-desk-composition-with-technological-device_23-2147916744.jpg";
 import blogGridImg4 from "/images/blog-4.png";
 import blogGridImg5 from "/images/blog-5.png";
 import blogGridImg6 from "/images/blog-6.png";
@@ -16,82 +16,47 @@ const blogData = [
     blogGridImg: blogGridImg,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Solution This Business For is Marketing Blog",
+    blogGridUrl: "",
+    blogGridTitle: "How to Choose the Right Colors for Your Website",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      "How to Choose the Right Colors for Your Website",
   },
   {
     id: 2,
     blogGridImg: blogGridImg2,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Easy and Most Powerful Server and Platform.",
+    blogGridUrl: "",
+    blogGridTitle: "How to Optimize Your Website for User Experience",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      "How to Optimize Your Website for User Experience",
   },
   {
     id: 3,
     blogGridImg: blogGridImg3,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "In eu fringilla, accumsan purusvel sollicitudin.",
+    blogGridUrl: "",
+    blogGridTitle: "The Impact of Mobile Devices on Web Design",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      "The Impact of Mobile Devices on Web Design",
   },
-  {
-    id: 4,
-    blogGridImg: blogGridImg4,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Vivamus vehicula nl purus at eros interdum.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
-  },
-  {
-    id: 5,
-    blogGridImg: blogGridImg5,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Optimizing IT Infrastructure for Cost Efficiency.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
-  },
-  {
-    id: 6,
-    blogGridImg: blogGridImg6,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Business Rules of Running to Web Solution.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
-  },
+  
 ];
 
 const BlogGrid = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Blog Grid"}
+        breadCrumbTitle={"Blog"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog Grid"}
+        breadCrumbLink={"Blog"}
       />
       <section className="pt-28">
         <div className="Container">

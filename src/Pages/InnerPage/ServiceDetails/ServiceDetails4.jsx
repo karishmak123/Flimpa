@@ -26,7 +26,7 @@ const ServiceDetails = () => {
   
   <section className="pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative mt-5">
   <div className="Container">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center" style={{marginTop:"8%"}}>
       <div className="relative z-10">
         <img src="/images/mobile-development.jpg" draggable="false" />
       </div>
@@ -122,11 +122,14 @@ const ServiceDetails = () => {
       </div>
 
       {/* Custom App Solutions */}
-      <div className="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg">
-        <AiOutlineSolution className="text-teal-600 text-4xl mb-4 mx-auto" />
-        <h3 className="text-xl font-semibold">CUSTOM APP SOLUTIONS</h3>
+     
+
+      {/* React Native Development */}
+      <div className="bg-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg">
+        <FaReact className="text-indigo-600 text-4xl mb-4 mx-auto" />
+        <h3 className="text-xl font-semibold">REACT NATIVE DEVELOPMENT</h3>
         <p className="mt-2 text-gray-600">
-          We offer tailored app solutions that meet your business needs, from third-party integrations and payment gateways to APIs and custom features, ensuring your app stands out.
+          We build high-performance, cross-platform mobile apps using React Native, ensuring fast development cycles, native-like performance, and consistent user experiences across iOS and Android.
         </p>
       </div>
 
@@ -135,37 +138,8 @@ const ServiceDetails = () => {
 </section>
 
 
-      {/* Technologies We Use Section */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Technologies We Use for Mobile App Development</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Our team uses the latest mobile development technologies to build apps that are feature-rich, fast, and scalable. Whether you're building for iOS, Android, or both, we have you covered.
-          </p>
-          <div className="flex justify-center gap-8">
-          
-            <div className="bg-gradient-to-r from-red-400 via-red-600 to-red-800 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaReact className="text-white text-6xl" />
-            </div>
 
-            <div className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaAndroid className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-green-500 via-green-600 to-green-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaApple className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <img src="/images/flutter-icon.svg" alt="Flutter" className="w-12 h-12" />
-            </div>
-
-            <div className="bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <img src="/images/react-native-icon.svg" alt="React Native" className="w-12 h-12" />
-            </div>
-          </div>
-        </div>
-      </section> */}
+    
 
    
     </>

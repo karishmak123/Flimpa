@@ -5,7 +5,7 @@ import { BiRightTopArrowCircle } from "react-icons/bi";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/glossy-online-tutoring-session-concept-as-glossy-image-online-tutoring-session-with-tuto_980716-636114.jpg')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[700px] flex items-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
           <div className="relative">
@@ -35,14 +35,14 @@ const Banner = () => {
               </Link>
             </div>
           </div>
-          <div className="sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden">
+          {/* <div className="sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden">
             <img src={bannerImg} draggable="false" className=":w-[inherit]" />
             <img
               src={bannerShape}
               draggable={false}
               className="absolute top-40 left-0 md:left-20 lg:left-0 xl:left-10 2xl:left-[7rem] animate-rotational hidden sm:block"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

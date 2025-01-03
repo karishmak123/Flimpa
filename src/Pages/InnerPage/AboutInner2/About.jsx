@@ -1,4 +1,4 @@
-import aboutThumb from "/images/about-inner-thumb.png";
+import aboutThumb from "/images/standard-quality-control-concept-m_23-2150041861.jpg";
 import aboutIcon from "/images/about-icon.png";
 import { IoMdPlay } from "react-icons/io";
 import { useState } from "react";

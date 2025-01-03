@@ -1,4 +1,4 @@
-import aboutThumb from "/images/about-thumb.png";
+import aboutThumb from "/images/skyscrapers-from-low-angle-view_1359-159.jpg";
 import aboutIcon from "/images/about-icon1.png";
 import aboutIcon2 from "/images/about-icon2.png";
 import aboutIcon3 from "/images/about-icon3.png";
@@ -17,7 +17,7 @@ const About = () => {
         <div className="relative z-10">
           <img src={aboutThumb} draggable="false" />
           <div className="absolute top-0 left-0">
-            <div className="bg-PrimaryColor-0 pb-6 pt-5 flex flex-col justify-between overflow-hidden rounded-lg h-[117px] sm:h-[208px] lg:h-[180px] xl:h-[208px] w-[92px] sm:w-[170px] lg:w-[140px] xl:w-[170px] items-center text-center relative z-10 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:w-0 sm:before:w-8 before:h-[2px] before:bg-white after:absolute after:-top-14 after:-left-[2px] after:w-0 sm:after:w-[174px] after:h-[170px] after:bg-[#1164ED] after:-z-10 after:rounded-full">
+            {/* <div className="bg-PrimaryColor-0 pb-6 pt-5 flex flex-col justify-between overflow-hidden rounded-lg h-[117px] sm:h-[208px] lg:h-[180px] xl:h-[208px] w-[92px] sm:w-[170px] lg:w-[140px] xl:w-[170px] items-center text-center relative z-10 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:w-0 sm:before:w-8 before:h-[2px] before:bg-white after:absolute after:-top-14 after:-left-[2px] after:w-0 sm:after:w-[174px] after:h-[170px] after:bg-[#1164ED] after:-z-10 after:rounded-full">
               <CountUp
                 start={-9}
                 end={22}
@@ -27,7 +27,7 @@ const About = () => {
               <h6 className="font-Rajdhani text-sm leading-4 sm:text-lg sm:leading-5 font-semibold text-white">
                 Years Of <br /> Excellence
               </h6>
-            </div>
+            </div> */}
           </div>
           <img
             src={aboutShape}

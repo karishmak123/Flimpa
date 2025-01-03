@@ -36,7 +36,7 @@ const serviceData = [
     serviceIcon: <FaCode />,
     serviceTitle: "WEBSITE DEVELOPMENT",
     serviceDesc:
-      "Monotonectal grants to business visualize provid solution services business provid done",
+      " We craft custom websites that reflect your brand and engage users. Our responsive, SEO-friendly...",
     serviceUrl: "/service_details2",
     serviceButton2: "Read More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -46,7 +46,7 @@ const serviceData = [
    serviceIcon: <TiShoppingCart/>,
     serviceTitle: "ECOMMERCE DEVELOPMENT",
     serviceDesc:
-      "Monotonectal grants to business visualize provid solution services business provid done",
+      "We create customized, secure, and scalable eCommerce solutions to help your business grow.",
     serviceUrl: "/service_details3",
     serviceButton2: "Read More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -56,7 +56,7 @@ const serviceData = [
     serviceIcon : <FaMobileScreen/>,
     serviceTitle: "MOBILE APP DEVELOPMENT",
     serviceDesc:
-      "Monotonectal grants to business visualize provid solution services business provid done",
+      " Our app development focuses on delivering innovative, user-friendly, and scalable solutions. We tailor our services..",
     serviceUrl: "/service_details4",
     serviceButton2: "Read More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -66,7 +66,7 @@ const serviceData = [
     serviceIcon: <FaChartLine />,
     serviceTitle: "Digital Marketing",
     serviceDesc:
-      "Monotonectal grants to business visualize provid solution services business provid done",
+      "We combine innovative strategies and cutting-edge technologies to elevate your online presence. ",
     serviceUrl: "/service_details5",
     serviceButton2: "Read More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -76,7 +76,7 @@ const serviceData = [
     serviceIcon: <FaCode/>,
     serviceTitle: "WEBSITE APPLICATION",
     serviceDesc:
-      "Monotonectal grants to business visualize provid solution services business provid done",
+      " We build custom, scalable, and secure web applications designed to grow with your business.",
     serviceUrl: "/service_details6",
     serviceButton2: "Read More",
     serviceButton: <HiOutlineArrowNarrowRight />,
