@@ -16,7 +16,7 @@ const ServiceData = [
     serviceNumber: "01",
     serviceTitle: "Website Design",
     serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries",
+      "We create custom website designs that elevate your online presence, engage visitors, and drive conversions.",
     serviceUrl: "/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
@@ -27,8 +27,8 @@ const ServiceData = [
     serviceNumber: "02",
     serviceTitle: "Website Development",
     serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+      "We craft custom websites that reflect your brand and engage users. Our responsive, SEO-friendly solutions ",
+    serviceUrl: "/service_details2",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },
@@ -38,8 +38,8 @@ const ServiceData = [
     serviceNumber: "03",
     serviceTitle: "Mobile App Development",
     serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+      "Our app development focuses on delivering innovative, user-friendly, and scalable solutions.",
+    serviceUrl: "/service_details4",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
     serviceIconStyle: { width: "60px !important" }, // Add inline width style here
@@ -50,8 +50,8 @@ const ServiceData = [
     serviceNumber: "04",
     serviceTitle: "Digital Marketing",
     serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+      "We combine innovative strategies and cutting-edge technologies to elevate your online presence. ",
+    serviceUrl: "/service_details5",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },

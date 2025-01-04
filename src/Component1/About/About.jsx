@@ -91,7 +91,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Link to={"/about"}>
+          <Link to={"/about2"}>
             <button className="primary-btn">
               {`Discover More`}
               <GoArrowRight size={"22"} />

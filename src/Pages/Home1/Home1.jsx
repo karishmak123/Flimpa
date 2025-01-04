@@ -36,7 +36,7 @@ const Home1 = () => {
      
       
       <Blog />
-      <Brand />
+      {/* <Brand /> */}
     </>
   );
 };

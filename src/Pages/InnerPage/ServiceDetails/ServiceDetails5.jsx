@@ -72,7 +72,7 @@ const ServiceDetails = () => {
 </section>
 
 
-    <section className="py-16" style={{ background: "rgb(2 21 51)" }}>
+    <section className="py-16" style={{background:"rgb(2 21 51)", marginBottom:"50px"}}>
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-bold text-white">Key Features of Our Digital Marketing Services</h2>
     <p className="mt-4 text-lg text-white">
@@ -119,37 +119,7 @@ const ServiceDetails = () => {
 </section>
 
 
-      {/* Services We Offer Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Digital Marketing Services</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Our services cover all aspects of digital marketing, ensuring a comprehensive approach to growing your business online.
-          </p>
-          <div className="flex justify-center gap-8">
-            {/* Service Icons */}
-            <div className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaChartLine className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-green-400 via-green-600 to-green-800 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaBullhorn className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              {/* <FaSearch className="text-white text-6xl" /> */}
-            </div>
-
-            <div className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              {/* <FaMobileAlt className="text-white text-6xl" /> */}
-            </div>
-
-            <div className="bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaUsers className="text-white text-6xl" />
-            </div>
-          </div>
-        </div>
-      </section>
+   
 
    
     </>

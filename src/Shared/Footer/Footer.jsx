@@ -20,14 +20,13 @@ const Footer = () => {
               <img src={footerLogo} draggable={false} />
             </Link>
             <p className="font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12">
-              Monotonectally synergize granular top{" "}
-              <br className="hidden xl:block" /> visualize strategic
-              infomediaries afters <br className="hidden xl:block" /> task state
-              of the art infrastructures <br className="hidden xl:block" />{" "}
-              digital agency in north
-            </p>
+  At BlueTech Digital, we specialize in web and app development, delivering tailored solutions that empower businesses to thrive. 
+  From strategy to execution, our digital agency creates cutting-edge infrastructures and innovative experiences to drive success.
+</p>
+
+
             <div>
-              <Link to={"/about"}>
+              <Link to={"/about2"}>
                 <button className="primary-btn">
                   {`Discover More`}
                   <GoArrowRight size={"22"} />
@@ -41,7 +40,7 @@ const Footer = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link to={"/about2"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     About Us
@@ -57,7 +56,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/projec"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                    Our Project
@@ -88,7 +87,7 @@ const Footer = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link to={"/service_details"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Website Design
@@ -96,7 +95,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/service_details2"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                    Website Developemnt
@@ -104,7 +103,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/service_details5"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Digital Marketing
@@ -112,7 +111,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/service_details4"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                    App Development
@@ -120,7 +119,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/service_details6"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                    Website Application
@@ -136,22 +135,23 @@ const Footer = () => {
             <p className="font-Nunito text-white opacity-80 font-medium mb-[26px]">
             Your Feedback Drives Us
             </p>
-            <form action="#" method="post">
-           
-              <button
-                type="submit"
-                className="h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
-              >
-                Contact
-              </button>
-            </form>
+            <a href="/contact" className="relative">
+  <button
+    type="submit"
+    className="h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
+  >
+    Contact
+  </button>
+</a>
+
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
-            <p className="font-Nunito text-white">
-              © 2024 Toptech. Designed By Dream IT Solution
-            </p>
+          <p className="font-Nunito text-white">
+  © 2025 BlueTech Digital. Designed and Developed by BlueTech Digital.
+</p>
+
           </div>
           <div>
             <ul className="flex gap-3">

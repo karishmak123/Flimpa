@@ -254,7 +254,7 @@ const Navbar = () => {
                       : isActive
                       ? "active"
                       : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
-                  to="/about"
+                  to="about2"
                 >
                   <span className="flex items-center">
                     About

@@ -14,8 +14,8 @@ const ProjectData = [
     projectUrl: "",
     projectBtn: <FaPlus />,
     projectDescription: "Indianmilan Is Most Trusted Matrimonial Services. They Helps To People In In All Community To Find Their True Life Partner. There Purpose Is To Help People To Find Their Life Partner In All Communities. They Understands The Challenges And Concerns Of People. They Provide, Satisfying, And Matchmaking Experience To There Customers.",
-    technologies: ["PHP", "Laravel", "Reactjs", "MySql", "Css"],
-    projectLink: "https://example.com/project1", // Link to the project website
+    technologies: ["PHP", "Laravel", "React Native", "MySql", "Css"],
+    projectLink: "https://indianmilan.com/", // Link to the project website
   },
   {
     id: 2,
@@ -25,8 +25,8 @@ const ProjectData = [
     projectUrl: "",
     projectBtn: <FaPlus />,
     projectDescription: "Livingpe Offer The Community With Millions Of People To Find Dates, Meet People & Make New Friends. Livingpe Is A Free Dating App And Social Network For Singles; The Perfect Place To Meet New People, In An Instant.",
-    technologies: ["PHP", "Laravel", "Reactjs", "MySql", "Css",],
-    projectLink: "https://example.com/project2", // Link to the project website
+    technologies: ["PHP", "Laravel", "React Native", "MySql", "Css",],
+    projectLink: "https://www.livingpe.com/", // Link to the project website
   },
 ];
 
@@ -91,7 +91,7 @@ const Project = () => {
         </div>
       </section>
 
-      <TeamMember />
+      {/* <TeamMember /> */}
 
     </>
 

@@ -37,7 +37,7 @@ const processData = [
     featureTitle: "Unmatched Support",
     featureDesc:
       "From concept to deployment, we provide ongoing support to ensure your success in the digital world.",
-    featureUrl: "/support",
+    featureUrl: "/contact",
     featureBtn: "Contact Us",
   },
 ];
