@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
+import React, { useEffect } from "react";
 import featureIcon from "/images/feature-icon1.png";
 import featureIcon2 from "/images/feature-icon2.png";
 import featureIcon3 from "/images/feature-icon3.png";
 import featureshape from "/images/feature-shape-1.png";
 import featureshape2 from "/images/feature-shape-2.png";
 import FeatureCard from "./FeatureCard";
+import AOS from "aos";  // Import AOS
+import "aos/dist/aos.css";  // Import AOS CSS
 
 const processData = [
   {
@@ -42,8 +45,16 @@ const processData = [
   },
 ];
 
-
 const Feature = () => {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing type
+      once: true, // Animation will happen once
+    });
+  }, []);
+
   return (
     <section className="bg-BodyBg-0">
       <div className="Container">
@@ -60,7 +71,7 @@ const Feature = () => {
               featureBtn,
             }) => {
               return (
-                <div key={id}>
+                <div key={id} data-aos={id === 1 ? "fade-left" : id === 2 ? "fade-right" : "fade-up"}>
                   <FeatureCard
                     featureIcon={featureIcon}
                     featureshape={featureshape}

@@ -49,38 +49,6 @@ const ServiceDetails = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"Service Details"}
       />
-
-
-      {/* Overview Section */}
-      {/* <section className="py-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
-        <img src="/images/service-overview.jpg" alt="Overview" className="rounded-md shadow-lg" />
-        <div>
-          <h2 className="text-3xl font-bold text-gray-800">Why Choose Our Website Design?</h2>
-          <p className="mt-4 text-lg text-gray-600">
-            At WebSpread, we specialize in crafting tailored website designs that reflect your brand's vision and engage your target audience. Our approach focuses on the following:
-          </p>
-          <ul className="mt-4 space-y-4">
-            <li className="flex items-center">
-              <FaRegFolderOpen className="text-blue-600 text-2xl mr-4" />
-              <span>Tailored designs that align with your brand identity</span>
-            </li>
-            <li className="flex items-center">
-              <FaHtml5 className="text-red-600 text-2xl mr-4" />
-              <span>Responsive, SEO-friendly, and mobile-first designs</span>
-            </li>
-            <li className="flex items-center">
-              <FaReact className="text-blue-500 text-2xl mr-4" />
-              <span>Scalable and interactive features using modern technologies</span>
-            </li>
-            <li className="flex items-center">
-              <FaNodeJs className="text-green-500 text-2xl mr-4" />
-              <span>Fast-loading and performance-optimized websites</span>
-            </li>
-          </ul>
-        </div>
-      </section> */}
-
-
       <section className="pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative mt-5">
         {/* <img
         src={aboutShape}
@@ -124,12 +92,7 @@ const ServiceDetails = () => {
             </div>
           </div>
         </div>
-
-
       </section>
-
-
-
       {/* Features Section */}
       <section className="py-16 " style={{ background: "rgb(2 21 51)" , marginBottom:"50px"}}>
         <div className="max-w-6xl mx-auto text-center">
@@ -176,51 +139,6 @@ const ServiceDetails = () => {
           </div>
         </div>
       </section>
-
-
-
-      {/* <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Technologies We Use</h2>
-          <p className="text-lg text-gray-600 mb-8">Our team works with the latest technologies to bring your website vision to life.</p>
-          <div className="flex justify-center gap-8">
-           
-            <div className="bg-gradient-to-r from-red-400 via-red-600 to-red-800 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaHtml5 className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaCss3Alt className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaReact className="text-white text-6xl" />
-            </div>
-
-            <div className="bg-gradient-to-r from-green-500 via-green-600 to-green-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <FaNodeJs className="text-white text-6xl" />
-            </div>
-
-          
-            <div className="bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <img src="/images/bootstrap-icon.svg" alt="Bootstrap" className="w-12 h-12" />
-            </div>
-
-            <div className="bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <img src="/images/wordpress-icon.png" alt="WordPress" className="w-12 h-12" />
-            </div>
-
-            <div className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300">
-              <img src="/images/figma-icon.svg" alt="Figma" className="w-12 h-12" />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-
-
-
-
     </>
   );
 };

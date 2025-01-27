@@ -2,25 +2,26 @@ import { FaPhoneAlt } from "react-icons/fa";
 import ContactBoxCard from "./ContactBoxCard";
 import { MdOutlineMail } from "react-icons/md";
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { FaHome, FaBuilding } from "react-icons/fa";
 
 const processData = [
   {
     id: 1,
     contactBoxIcon: <FaPhoneAlt />,
     contactBoxSubTitle: "Call Us Anytime",
-    contactBoxTitle: "+123 (4547) 563",
+    contactBoxTitle: "+91 942 478 1796",
   },
   {
     id: 2,
-    contactBoxIcon: <MdOutlineMail />,
-    contactBoxSubTitle: "Send E-Mail",
-    contactBoxTitle: "info@gmail.com",
+    contactBoxIcon: <FaHome  />,
+    contactBoxSubTitle: "Head Office",
+    contactBoxTitle: "Gali No. 10, Ward No. 26, Rajendra Nagar Satna, Madhya Pradesh, India - 485001",
   },
   {
     id: 3,
-    contactBoxIcon: <AiOutlineClockCircle />,
-    contactBoxSubTitle: "Opening Hours",
-    contactBoxTitle: "Fri - Mon (9.00 - 5.00)",
+    contactBoxIcon: <FaBuilding  />,
+    contactBoxSubTitle: "Branch Office",
+    contactBoxTitle: "99th, 1st floor, 18th Main road, BTM layout 1st stage, Bangalore 560068",
   },
 ];
 

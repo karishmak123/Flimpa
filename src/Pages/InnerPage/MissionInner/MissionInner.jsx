@@ -4,9 +4,6 @@ import { FiCheck } from "react-icons/fi";
 import missionImg from "/images/business-concept-with-team-close-up.jpg";
 import missionImg2 from "/images/goals-target-aspiration-perforated-paper-bullseye.jpg";
 import missionImg3 from "/images/3d-rendering-arrow-hitting-target.jpg";
-import { Link } from "react-router-dom";
-import Feature from "../../../Component2/Feature/Feature";
-import Brand from "../../../Component1/Brand/Brand";
 
 const MissionInner = () => {
   return (
@@ -122,8 +119,6 @@ const MissionInner = () => {
           </div>
         </div>
       </section>
-      {/* <Feature /> */}
-      {/* <Brand /> */}
     </>
   );
 };

@@ -241,6 +241,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   left: 50% !important;
   flex-direction: row !important;
   justify-content: center;
+  display: none !important;
 }
 
 .testimonial span.swiper-pagination-bullet {
@@ -251,7 +252,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border: none !important;
 }
 
-.testimonial span.swiper-pagination-bullet:nth-of-type(1) {
+/* .testimonial span.swiper-pagination-bullet:nth-of-type(1) {
   background: url(../public/images/testi-5.png) no-repeat center/cover !important;
 }
 
@@ -269,7 +270,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(5) {
   background: url(../public/images/testi-1.png) no-repeat center/cover !important;
-}
+} */
 
 .testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 110px !important;
@@ -286,6 +287,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 @media (min-width: 320px) and (max-width: 767px) {
   .testimonial .swiper-pagination {
     gap: 5px !important;
+    display: none !important;
   }
 
   .testimonial span.swiper-pagination-bullet {

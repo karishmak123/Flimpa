@@ -1,20 +1,16 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import RequestQuoteForm from '@components/RequestQuoteForm/RequestQuoteForm.jsx';
-
-
-
-
-
 import {
   FaBars,
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
+  FaInstagram ,
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
-import Logo from "/images/logo.png";
+import Logo from "/images/company-logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
@@ -64,14 +60,14 @@ const Navbar = () => {
           <div className="flex items-center gap-10">
             <p className="font-Nunito text-white sm:flex hidden items-center gap-1">
               <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
-              New market Sandigo - California
+              Rajendra Nagar - Satna
             </p>
             <Link
               to={"/"}
               className="font-Nunito text-white md:flex items-center gap-2 hidden"
             >
               <HiOutlineMailOpen size={"16"} className="text-white" />
-              example@hotmail.com
+              flimpasolutions@gmail.com
             </Link>
           </div>
           <div className="flex items-center gap-16">
@@ -80,43 +76,41 @@ const Navbar = () => {
                 <GrAlarm />
               </span>
               <p className="font-Nunito font-medium text-white">
-                9.10 am - 5.30 pm
+                10.00 am - 8.00 pm
               </p>
             </div>
             <ul className="flex gap-3 items-center">
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaFacebookF />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaXTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaPinterestP />
-                </Link>
-              </li>
-            </ul>
+  <li>
+    <a
+      href="https://www.facebook.com/profile.php?id=61571548424383"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+    >
+      <FaFacebookF />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.instagram.com/bluetechdigi?igsh=Z216d3BmaWIzN2w3"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+    >
+      <FaInstagram />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/company/bluetech-digital-solutions/?viewAsMember=true"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+    >
+      <FaLinkedinIn />
+    </a>
+  </li>
+</ul>
           </div>
         </div>
       </header>
@@ -168,9 +162,8 @@ const Navbar = () => {
             {/* All navLink are hear with active */}
             <div className="flex gap-6 items-center">
               <ul
-                className={`${
-                  isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
+                className={`${isOpen ? "block" : "hidden"
+                  } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
               >
                 <NavLink
@@ -179,81 +172,21 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
+                        ? "active"
+                        : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
                     {/* <BiChevronDown className="ml-1" /> */}
                   </span>
-                  {/* <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/" className="py-2 block">
-                            Home Page 01
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home2" className="py-2 block">
-                            Home Page 02
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home3" className="py-2 block">
-                            Home Page 03
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home4" className="py-2 block">
-                            Home Page 04
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 group2">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home5" className="py-2 block relative">
-                            Home Page 05
-                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                              NEW
-                            </span>
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 group2">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home6" className="py-2 block relative">
-                            Home Page 06
-                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                              NEW
-                            </span>
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 group2 cursor-not-allowed">
-                        <li className="py-2 block relative">
-                          {`Other's Home`}
-                          <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                            Coming Soon
-                          </span>
-                        </li>
-                      </div>
-                    </ul>
-                  </div> */}
                 </NavLink>
                 <NavLink
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? "pending"
                       : isActive
-                      ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                        ? "active"
+                        : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="about2"
                 >
                   <span className="flex items-center">
@@ -272,14 +205,14 @@ const Navbar = () => {
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/mission_inner" className="py-2 block">
-                          Our Misson
+                            Our Misson
                           </Link>
                         </li>
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/project" className="py-2 block">
-                          Our Project
+                            Our Project
                           </Link>
                         </li>
                       </div>
@@ -291,8 +224,8 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                        ? "active"
+                        : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -311,144 +244,56 @@ const Navbar = () => {
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service_details" className="py-2 block">
-                          Website Design
+                            Website Design
                           </Link>
                         </li>
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service_details2" className="py-2 block">
-                          Website Development
+                            Website Development
                           </Link>
                         </li>
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service_details4" className="py-2 block">
-                          App Development
+                            App Development
                           </Link>
                         </li>
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service_details5" className="py-2 block">
-                          Digital Marketing
+                            Digital Marketing
                           </Link>
                         </li>
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service_details3" className="py-2 block">
-                          Ecommerce Development
+                            Ecommerce Development
                           </Link>
                         </li>
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service_details6" className="py-2 block">
-                         Website Application
+                            Website Application
                           </Link>
                         </li>
                       </div>
                     </ul>
                   </div>
                 </NavLink>
-                {/* <NavLink
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
-                  to="#"
-                >
-                  <span className="flex items-center">
-                    Pages
-                    <BiChevronDown className="ml-1" />
-                  </span>
-                  <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/why_choose" className="py-2 block">
-                            Why Choose Us
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/mission_inner" className="py-2 block">
-                            Our Mission
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/team_inner" className="py-2 block">
-                            Team Member
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/team_details" className="py-2 block">
-                            Team Details
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/project" className="py-2 block">
-                            Projects
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/project_details" className="py-2 block">
-                            Project Details
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/pricing_inner" className="py-2 block">
-                            Pricing Plan
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/location" className="py-2 block">
-                            Our Location
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/career" className="py-2 block">
-                            Careers
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/faq_inner" className="py-2 block">
-                            Faq
-                          </Link>
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </NavLink> */}
                 {/* blog sub menu link */}
                 <NavLink
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? "pending"
                       : isActive
-                      ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                        ? "active"
+                        : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -460,31 +305,10 @@ const Navbar = () => {
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blog_grid" className="py-2 block">
-                            Blog 
+                            Blog
                           </Link>
                         </li>
                       </div>
-                      {/* <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_left_sidebar" className="py-2 block">
-                            Blog Left Sidebar
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_right_sidebar" className="py-2 block">
-                            Blog Right Sidebar
-                          </Link>
-                        </li>
-                      </div> */}
-                      {/* <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_details" className="py-2 block">
-                            Blog Details
-                          </Link>
-                        </li>
-                      </div> */}
                     </ul>
                   </div>
                 </NavLink>
@@ -493,31 +317,34 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "active"
-                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
+                        ? "active"
+                        : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
                 </NavLink>
               </ul>
               <div>
-      {/* Navbar content */}
-      <div className="hidden lg:flex items-center">
-        <button>
-          <IoSearch className="text-2xl ml-2 mr-10 text-HeadingColor-0" />
-        </button>
+                {/* Navbar content */}
+                <div className="hidden lg:flex items-center">
+                  <button>
+                    <IoSearch className="text-2xl ml-2 mr-10 text-HeadingColor-0" />
+                  </button>
 
-        {/* Button to open popup */}
-        <button className="header-btn" onClick={openPopup}>
-          Get A Quote
-        </button>
-      </div>
+                  {/* Button to open popup */}
+                  {/* <button className="header-btn" onClick={openPopup}>
+                    Get A Quote
+                  </button> */}
+                  {/* <button className="header-btn">
+                    Get A Quote
+                  </button> */}
+                </div>
 
-      {/* Conditional rendering of the popup form */}
-      {isPopupOpen && (
-        <RequestQuoteForm onClosePopup={closePopup} />
-      )}
-    </div>
+                {/* Conditional rendering of the popup form */}
+                {isPopupOpen && (
+                  <RequestQuoteForm onClosePopup={closePopup} />
+                )}
+              </div>
             </div>
           </div>
         </div>

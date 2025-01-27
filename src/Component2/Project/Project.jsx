@@ -1,9 +1,7 @@
 import { FaPlus } from "react-icons/fa6";
 import projectThumb from "/images/project1.png";
 import projectThumb2 from "/images/project2.png";
-import projectThumb3 from "/images/portfolio2-3.png";
-import ProjectCard from "./ProjectCard";
-import TeamMember from '../../Component1/TeamMember/TeamMember';
+import projectThumb3 from "/images/astro-image.png";
 
 const ProjectData = [
   {
@@ -15,7 +13,7 @@ const ProjectData = [
     projectBtn: <FaPlus />,
     projectDescription: "Indianmilan Is Most Trusted Matrimonial Services. They Helps To People In In All Community To Find Their True Life Partner. There Purpose Is To Help People To Find Their Life Partner In All Communities. They Understands The Challenges And Concerns Of People. They Provide, Satisfying, And Matchmaking Experience To There Customers.",
     technologies: ["PHP", "Laravel", "React Native", "MySql", "Css"],
-    projectLink: "https://indianmilan.com/", // Link to the project website
+    projectLink: "https://indianmilan.com/", 
   },
   {
     id: 2,
@@ -26,8 +24,20 @@ const ProjectData = [
     projectBtn: <FaPlus />,
     projectDescription: "Livingpe Offer The Community With Millions Of People To Find Dates, Meet People & Make New Friends. Livingpe Is A Free Dating App And Social Network For Singles; The Perfect Place To Meet New People, In An Instant.",
     technologies: ["PHP", "Laravel", "React Native", "MySql", "Css",],
-    projectLink: "https://www.livingpe.com/", // Link to the project website
+    projectLink: "https://www.livingpe.com/", 
   },
+  {
+    id: 3, 
+    projectThumb: projectThumb3,
+    projectSubTitle: "Technology",
+    projectTitle: "ASTROLOGY APP",
+    projectUrl: "",
+    projectBtn: <FaPlus />,
+    projectDescription: "The Astroway App offers personalized horoscope readings, astrological insights, and compatibility analysis based on the user's birth chart. Users can explore daily, weekly, and monthly predictions, as well as get advice on love, career, and life decisions. With interactive features like astrology-based matchmaking and live sessions with astrologers, this app aims to provide a deeper understanding of the cosmic influences on their lives.",
+    technologies: ["Flutter", "Laravel"],
+    // projectLink: "https://www.astrologyapp.com/", 
+  }
+  
 ];
 
 const Project = () => {
@@ -90,15 +100,9 @@ const Project = () => {
           )}
         </div>
       </section>
-
-      {/* <TeamMember /> */}
-
     </>
 
   );
-
 };
-
-
 
 export default Project;

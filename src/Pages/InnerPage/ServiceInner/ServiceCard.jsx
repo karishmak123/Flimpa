@@ -14,7 +14,7 @@ const ServiceCard = ({
   <div className="absolute -top-10 left-1/2 -translate-x-1/2 z-10">
     <div className="size-[86px] rounded-full bg-BodyBg-0 border-2 border-white flex justify-center items-center relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 group-hover:before:-bottom-2">
       <div className="text-5xl text-blue-600 group-hover:text-blue-800 transition-colors duration-300">
-        {serviceIcon} {/* Add size and color styling */}
+        {serviceIcon} 
       </div>
     </div>
   </div>
@@ -31,8 +31,6 @@ const ServiceCard = ({
     </button>
   </Link>
 </div>
-
-
   );
 };
 

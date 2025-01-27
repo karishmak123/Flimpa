@@ -3,19 +3,19 @@ import CounterCard from "./CounterCard";
 const counterData = [
   {
     id: 1,
-    counterNumber: 10,
+    counterNumber: 100,
     counterDesc: "HAPPY CUSTOMERS",
-    counterSuffex: "K+",
+    counterSuffex: "+",
   },
   {
     id: 2,
-    counterNumber: 20,
+    counterNumber: 250,
     counterDesc: "WORKS COMPLETED",
-    counterSuffex: "K+",
+    counterSuffex: "+",
   },
   {
     id: 3,
-    counterNumber: 99,
+    counterNumber: 50,
     counterDesc: "EXPERT MEMBERS",
     counterSuffex: "",
   },

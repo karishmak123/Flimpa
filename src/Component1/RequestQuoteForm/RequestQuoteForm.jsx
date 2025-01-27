@@ -13,6 +13,7 @@ const RequestQuoteForm = ({ onClosePopup }) => {
     source: '',
   });
 
+  const baseUrl = import.meta.env.VITE_API_URL;
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -31,7 +32,7 @@ const RequestQuoteForm = ({ onClosePopup }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch(`${baseUrl}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +72,7 @@ const RequestQuoteForm = ({ onClosePopup }) => {
           &times;
         </button>
         <h2 style={{ textAlign: 'center' }}>Get A Free Quote!</h2>
-        <p style={{ textAlign: 'center' , paddingTop:"5px"}}>Let's Create Your Dream App or Website Together</p>
+        <p style={{ textAlign: 'center', paddingTop: "5px" }}>Let's Create Your Dream App or Website Together</p>
         {/* Display Success or Error Message */}
         {successMessage && <p style={{ color: 'green', textAlign: 'center' }}>{successMessage}</p>}
         {errorMessage && <p style={{ color: 'red', textAlign: 'center' }}>{errorMessage}</p>}
@@ -157,6 +158,7 @@ const RequestQuoteForm = ({ onClosePopup }) => {
               <option value="" disabled>
                 Your Budget
               </option>
+              <option>$1,00 - $1,000</option>
               <option>$1,000 - $5,000</option>
               <option>$5,000 - $10,000</option>
               <option>$10,000+</option>
@@ -176,10 +178,10 @@ const RequestQuoteForm = ({ onClosePopup }) => {
             </select>
           </div>
           <div style={{ textAlign: 'center', marginTop: '10px' }}>
-           
+
             <button style={submitButtonStyle} type="submit"
-           
->
+
+            >
               Submit
             </button>
           </div>
@@ -189,11 +191,6 @@ const RequestQuoteForm = ({ onClosePopup }) => {
   );
 };
 
-
-
-
-// Inline styles
-// Inline styles
 const popupStyle = {
   position: 'fixed',
   top: 0,
@@ -209,7 +206,7 @@ const popupStyle = {
 
 const popupContentStyle = {
   backgroundColor: 'rgb(2 21 51 / var(--tw-bg-opacity))',
-  padding: '30px', // Increased padding for better spacing
+  padding: '30px',
   borderRadius: '10px',
   width: '90%',
   maxWidth: '600px',
@@ -235,18 +232,18 @@ const formStyle = {
 
 const inputGroupStyle = {
   display: 'flex',
-  gap: '15px', // Increased gap between input fields
-  marginBottom: '15px', // Increased margin for spacing
+  gap: '15px',
+  marginBottom: '15px',
 };
 
 const inputStyle = {
   flex: 1,
-  padding: '12px', // Increased padding for better readability
-  borderRadius: '8px', // Slightly rounder edges for input fields
+  padding: '12px',
+  borderRadius: '8px',
   border: '1px solid #ccc',
-  backgroundColor: '#f4f4f4', // Light background color to match theme
-  color: '#333', // Dark text for better readability
-  fontSize: '16px', // Increased font size for better accessibility
+  backgroundColor: '#f4f4f4',
+  color: '#333',
+  fontSize: '16px',
 };
 
 const selectStyle = {
@@ -254,12 +251,12 @@ const selectStyle = {
   padding: '12px',
   borderRadius: '8px',
   border: '1px solid #ccc',
-  backgroundColor: '#f4f4f4', // Matching background for the select input
-  color: '#333', // Dark text for better readability
+  backgroundColor: '#f4f4f4',
+  color: '#333',
   fontSize: '16px',
-  appearance: 'none', // Removes default browser styles
+  appearance: 'none',
   cursor: 'pointer',
-  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)', // Subtle shadow for depth
+  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
 };
 
 const textareaStyle = {
@@ -267,22 +264,22 @@ const textareaStyle = {
   padding: '12px',
   borderRadius: '8px',
   border: '1px solid #ccc',
-  backgroundColor: '#f4f4f4', // Light background color
+  backgroundColor: '#f4f4f4',
   color: '#333',
   fontSize: '16px',
   marginBottom: '15px',
 };
 
 const submitButtonStyle = {
-  backgroundColor: 'rgb(12 89 219 / var(--tw-bg-opacity))', // Bright red button for attention
+  backgroundColor: 'rgb(12 89 219 / var(--tw-bg-opacity))',
   color: '#fff',
   border: 'none',
-  padding: '12px 24px', // Increased padding for larger button
-  borderRadius: '8px', // Rounded corners for the button
+  padding: '12px 24px',
+  borderRadius: '8px',
   cursor: 'pointer',
-  fontSize: '16px', // Increased font size for readability
-  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)', // Shadow for depth
-  transition: 'background-color 0.3s ease', // Smooth hover transition
+  fontSize: '16px',
+  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+  transition: 'background-color 0.3s ease',
 };
 
 export default RequestQuoteForm;

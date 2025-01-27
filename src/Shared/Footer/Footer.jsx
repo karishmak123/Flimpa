@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import footerLogo from "/images/logo-2.png";
+import footerLogo from "/images/company-logo.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
+  FaInstagram,
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
@@ -17,12 +18,12 @@ const Footer = () => {
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <Link to={"/"}>
-              <img src={footerLogo} draggable={false} />
+              <img src={footerLogo} draggable={false} style={{ width: "200px" }} />
             </Link>
             <p className="font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12">
-  At BlueTech Digital, we specialize in web and app development, delivering tailored solutions that empower businesses to thrive. 
-  From strategy to execution, our digital agency creates cutting-edge infrastructures and innovative experiences to drive success.
-</p>
+              At BlueTech Digital, we specialize in web and app development, delivering tailored solutions that empower businesses to thrive.
+              From strategy to execution, our digital agency creates cutting-edge infrastructures and innovative experiences to drive success.
+            </p>
 
 
             <div>
@@ -56,15 +57,15 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/projec"}>
+                <Link to={"/project"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
-                   Our Project
+                    Our Project
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/blog_grid"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Latest Blog
@@ -98,7 +99,7 @@ const Footer = () => {
                 <Link to={"/service_details2"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
-                   Website Developemnt
+                    Website Developemnt
                   </button>
                 </Link>
               </li>
@@ -114,7 +115,7 @@ const Footer = () => {
                 <Link to={"/service_details4"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
-                   App Development
+                    App Development
                   </button>
                 </Link>
               </li>
@@ -122,7 +123,7 @@ const Footer = () => {
                 <Link to={"/service_details6"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                     <FiArrowRightCircle className="text-base text-PrimaryColor-0" />
-                   Website Application
+                    Website Application
                   </button>
                 </Link>
               </li>
@@ -130,51 +131,78 @@ const Footer = () => {
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[30px]">
-            Get in Touch!
+              Get in Touch!
             </h4>
             <p className="font-Nunito text-white opacity-80 font-medium mb-[26px]">
-            Your Feedback Drives Us
+              Your Feedback Drives Us
             </p>
-            <a href="/contact" className="relative">
-  <button
-    type="submit"
-    className="h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
-  >
-    Contact
-  </button>
-</a>
+
+            {/* Additional Contact Information */}
+            <div className="mt-6">
+              <p className="font-Nunito text-white opacity-80 font-medium mb-2">
+                Email: <a href="mailto:flimpasolutions@gmail.com" className="text-white">flimpasolutions@gmail.com</a>
+              </p>
+              <p className="font-Nunito text-white opacity-80 font-medium mb-2">
+                Phone: <a href="tel:+91 942 478 1796" className="text-white">+91 942 478 1796</a>
+              </p>
+            </div>
+            <Link to="/contact" className="relative">
+              <button
+                type="button" // Change to "button" for clarity
+                className="h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
+              >
+                Contact
+              </button>
+            </Link>
 
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
-          <p className="font-Nunito text-white">
-  © 2025 BlueTech Digital. Designed and Developed by BlueTech Digital.
-</p>
+            <p className="font-Nunito text-white">
+              © 2025 BlueTech Digital. Designed and Developed by BlueTech Digital.
+            </p>
 
           </div>
           <div>
             <ul className="flex gap-3">
               <li>
-                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaFacebookF />
-                </button>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61571548424383"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block" // Ensure the anchor takes the full button space
+                >
+                  <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaFacebookF />
+                  </button>
+                </a>
               </li>
               <li>
-                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaXTwitter />
-                </button>
+                <a
+                  href="https://www.instagram.com/bluetechdigi?igsh=Z216d3BmaWIzN2w3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block" // Ensure the anchor takes the full button space
+                >
+                  <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaInstagram />
+                  </button>
+                </a>
               </li>
               <li>
-                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaLinkedinIn />
-                </button>
+                <a
+                  href="https://www.linkedin.com/company/bluetech-digital-solutions/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block" // Ensure the anchor takes the full button space
+                >
+                  <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaLinkedinIn />
+                  </button>
+                </a>
               </li>
-              <li>
-                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaPinterestP />
-                </button>
-              </li>
+
             </ul>
           </div>
         </div>
